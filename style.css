@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+hr{
+    width:50%;
+    margin: 0px auto 2em auto;
+}
+
+.active{
+    color: #fff;
+}
+
+h1{
+    line-height: 2em;
+}
+
+a{
+    text-decoration: none;
+    color: gold;
+}
+
+li{
+    list-style-type: none;
+}
+
+a:hover{
+    color:#fff;
+}
+
+/* Header starts here */
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav_list{
+    display: flex;
+}
+
+header{
+    background-color: black;
+}
+
+.navigation{
+    height: 4em;
+}
+
+.nav_list li a{
+ font-size: 20px;
+ margin: 10px;
+}
+
+/* Section starts here */
+
+/* First article starts here */
+
+.title{
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    text-align: center;
+    color: gold;
+    z-index: 1;
+}
+
+.title h1{
+    font-size: 4em;
+}
+
+.title h3{
+    font-size: 2em;
+}
+
+#slide{
+    width: 100%;
+    height: 25em;
+    overflow: hidden;
+    position: relative;
+    background-image: url("images/red-mouse-computer.jpg");  
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+#slide > div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    animation: slide 25s infinite;
+    opacity: 0;
+  }
+
+  #slide > div:nth-child(2) {
+    animation-delay: 5s;
+  }
+  #slide > div:nth-child(3) {
+    animation-delay: 10s;
+  }
+  #slide > div:nth-child(4) {
+    animation-delay: 15s;
+  }
+  
+  @keyframes slide {
+    10% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 0;
+    }
+    40% {
+      transform: scale(1.2);
+    }
+  }
+
+  /* Second article starts here */
+  .project_header{
+    text-align: center;
+    line-height: 1em;
+    font-size: 4em;
+}
+
+.project_list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.projects{
+    margin: 0px 0px 10px 0px;
+    background-color: #000;
+    border-radius: 4px;
+    padding: 5px 0px 5px 5px;
+    width: 320px;
+    border: 2px solid gray;
+}
+
+#project_links a:first-child{
+    background-color: maroon;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    font-size: 18px;
+}
+
+figcaption h2{
+    text-align: center;
+    color: gold;
+}
+
+.description{
+    text-align: justify;
+    margin: 15px 10px 0 10px;
+    color: #fff;
+}
+
+figcaption h3{
+    text-align: center;
+    line-height: 2em;
+    color: gold;
+}
+
+.skills{
+    font-family: "New Tegomin", Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2em;
+    color: #fff;
+}
+
+#project_links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.disclaimer{
+    color: blue !important;
+    font-size: 16px !important;
+    text-align: center;
+}
+
+/* Footer starts here */
+
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: black;
+    align-items: center;   
+    height: 4em;
+}
+
+footer a, footer p{
+    color: #fff;
+}
+
+footer a{
+    font-size: 36px;
+}
+
+footer p{
+    font-size: 18px;
+}
+
