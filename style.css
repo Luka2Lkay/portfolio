@@ -189,6 +189,7 @@ figcaption h3{
     color: blue !important;
     font-size: 16px !important;
     text-align: center;
+    margin-bottom: 1em;
 }
 
 /* Footer starts here */
@@ -213,4 +214,74 @@ footer a{
 footer p{
     font-size: 18px;
 }
+
+/* Media query starts here */
+
+@media only screen and (max-width: 425px){
+    .title h1{
+        font-size: 2em;
+    }
+
+    .navigation{
+        height: 100%;
+    }
+
+/*Humburger menu starts here*/
+
+    .nav_list{
+        display: none;
+        margin-top: -1%;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    .nav_list.show{
+        display: flex;
+        flex-direction: column;
+    }  
+
+    #burger_menu{
+        display: inline-block;
+        cursor: pointer;
+        margin: 1em -20em 1em 0px;
+    }
+
+    .top_bar, .middle_bar, .bottom_bar{
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 4px 0;
+        transition: 0.5s;
+    }
+
+    .change .top_bar{
+        transform: rotateZ(-45deg) translateY(9px)
+    } 
+
+    .change .middle_bar{
+        opacity: 0;
+    }
+
+    .change .bottom_bar{
+        transform: rotateZ(45deg) translateY(-10px);
+    } 
+}
+
+@media only screen and (max-width: 320px){
+    .projects{
+        width: 280px;
+        margin-left: 20px;
+    }
+
+    /* Humburger menu starts here */
+
+    #burger_menu{
+        margin: 1em -16em 1em 0px;
+    }
+}
+
+
+
 
