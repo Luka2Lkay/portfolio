@@ -79,12 +79,17 @@ header{
     line-height: 2em;
 }
 
-.first_article p, .first_article h4{
+.first_article p{
     text-align: center;
     color: #fff;
     font-size: 1.5em;
     line-height: 2rem;
     margin-top: 2em;
+}
+
+.first_article img{
+   margin-left: 45%;
+   margin-top: 2em;
 }
 
 .disclaimer{
