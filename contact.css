@@ -36,22 +36,21 @@ a:hover{
 
 /* Header starts here */
 
-nav{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
 .nav_list{
     display: flex;
 }
 
-header{
-    background-color: black;
-}
-
 .navigation{
+    display: flex;
+    background-color: #000;
+    justify-content: flex-end;
+    align-items: center;
     height: 4em;
+    width: 100%;
+    padding-right: 2em;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
 .nav_list li a{
@@ -68,6 +67,7 @@ header{
     height: 25em;
     background-color: #000;
     padding: 0px 10px 0px 10px;
+    margin-top: 5em;
     margin-bottom: 3em;
     width: 50%;
 }
@@ -124,16 +124,13 @@ footer p{
 
 /* Media query starts here */
 @media only screen and (max-width: 425px){
+
     .first_article{
         width: 80%;
+        margin-top: 8em;
     }
-
     .first_article h1{
         font-size: 2em;
-    }
-
-    .navigation{
-        height: 100%;
     }
 
     /* Humbuger menu starts here */
@@ -142,8 +139,9 @@ footer p{
         margin-top: -1%;
     }
     
-    nav{
+    .navigation{
         flex-direction: column;
+        padding-top: 7em;
     }
     .nav_list.show{
         display: flex;

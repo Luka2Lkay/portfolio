@@ -36,22 +36,20 @@ a:hover{
 
 /* Header starts here */
 
-nav{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
 .nav_list{
     display: flex;
 }
 
-header{
-    background-color: black;
-}
-
 .navigation{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     height: 4em;
+    width: 100%;
+    padding-right: 2em;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
 .nav_list li a{
@@ -68,16 +66,17 @@ header{
     left: 10%;
     top: 30%;
     text-align: center;
-    color: gold;
     z-index: 1;
 }
 
 .title h1{
     font-size: 4em;
+    color: gold;
 }
 
 .title h3{
     font-size: 2em;
+    color: #fff;
 }
 
 #slide{
@@ -222,19 +221,15 @@ footer p{
         font-size: 2em;
     }
 
-    .navigation{
-        height: 100%;
-    }
-
 /*Humburger menu starts here*/
 
     .nav_list{
         display: none;
-        margin-top: -1%;
     }
 
-    nav{
+    .navigation{
         flex-direction: column;
+        margin-top: 5em;
     }
 
     .nav_list.show{
