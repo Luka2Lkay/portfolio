@@ -42,6 +42,7 @@ a:hover{
 
 .navigation{
     display: flex;
+    background-color: #000;
     justify-content: flex-end;
     align-items: center;
     height: 4em;
@@ -229,7 +230,11 @@ footer p{
 
     .navigation{
         flex-direction: column;
-        margin-top: 5em;
+        padding-top: 7em;
+    }
+
+    #slide{
+        margin-top: 8em;
     }
 
     .nav_list.show{
