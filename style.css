@@ -17,7 +17,7 @@ hr{
     color: #fff;
 }
 
-h1{
+h2{
     line-height: 2em;
 }
 
@@ -70,7 +70,7 @@ a:hover{
     z-index: 1;
 }
 
-.title h1{
+.title h2{
     font-size: 4em;
     color: gold;
 }
@@ -148,7 +148,7 @@ a:hover{
     border: 2px solid gray;
 }
 
-#project_links a:first-child{
+.project_links a:first-child{
     background-color: maroon;
     color: white;
     padding: 5px 20px 5px 20px;
@@ -219,7 +219,7 @@ footer p{
 /* Media query starts here */
 
 @media only screen and (max-width: 425px){
-    .title h1{
+    .title h2{
         font-size: 2em;
     }
 
