@@ -153,6 +153,7 @@ a:hover{
     color: white;
     padding: 5px 20px 5px 20px;
     font-size: 18px;
+    margin-left: 30%;
 }
 
 figcaption h2{
@@ -274,6 +275,10 @@ footer p{
     .projects{
         width: 280px;
         margin-left: 20px;
+    }
+
+    .project_links a:first-child{
+        margin-left: 23%;
     }
 
     /* Humburger menu starts here */
