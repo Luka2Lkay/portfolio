@@ -34,6 +34,10 @@ a:hover{
     color:#fff;
 }
 
+body{
+    font-family: 'Roboto slab', 'Times New Roman', Times, serif;
+}
+
 /* Header starts here */
 
 .nav_list{
