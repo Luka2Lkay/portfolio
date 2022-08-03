@@ -83,6 +83,9 @@ a:hover{
 .title h3{
     font-size: 2em;
     color: #fff;
+    background-color: #000;
+    border-width: 20%;
+    border-color: red;
 }
 
 #slide{
@@ -229,10 +232,6 @@ footer p{
         color: orangered;
     }
 
-    .title h3{
-        color: gold;
-    }
-
 /*Humburger menu starts here*/
 
     .nav_list{
@@ -241,7 +240,7 @@ footer p{
 
     .navigation{
         flex-direction: column;
-        padding-top: 7em;
+        padding-top: 8em;
     }
 
     .nav_list.show{

@@ -131,7 +131,7 @@ footer p{
 
     .first_article{
         width: 80%;
-        margin-top: 8em;
+        margin-top: 9em;
     }
     .first_article h2{
         font-size: 2em;
@@ -145,7 +145,7 @@ footer p{
     
     .navigation{
         flex-direction: column;
-        padding-top: 7em;
+        padding-top: 8em;
     }
     .nav_list.show{
         display: flex;
