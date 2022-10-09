@@ -149,7 +149,17 @@ a:hover{
     border-radius: 4px;
     padding: 5px 0px 5px 5px;
     width: 320px;
-    border: 2px solid gray;
+    box-shadow:  0px 6px 10px 0px maroon;
+}
+
+.projects:hover {
+    animation: card 1s 1 forwards;
+}
+
+@keyframes card {
+    100% {
+        transform: scale(1.1);
+    }
 }
 
 .project__links a:first-child{
