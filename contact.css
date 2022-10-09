@@ -3,6 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: gold;
+}
+
+
 .container{
     width: 80%;
     margin: 0 auto;
@@ -40,7 +63,7 @@ body{
 
 /* Header starts here */
 
-.nav_list{
+.nav__list{
     display: flex;
 }
 
@@ -57,7 +80,7 @@ body{
     z-index: 10;
 }
 
-.nav_list li a{
+.nav__list li a{
  font-size: 20px;
  margin: 10px;
 }
@@ -66,7 +89,7 @@ body{
 
 /* First article starts here */
 
-.first_article{
+.first__article{
     margin-top: 5em;
     height: 25em;
     background-color: #000;
@@ -76,14 +99,14 @@ body{
     width: 50%;
 }
 
-.first_article h2{
+.first__article h2{
     color: gold;
     font-size: 3em;
     text-align: center;
     line-height: 2em;
 }
 
-.first_article p{
+.first__article p{
     text-align: center;
     color: #fff;
     font-size: 1.5em;
@@ -91,7 +114,7 @@ body{
     margin-top: 2em;
 }
 
-.first_article img{
+.first__article img{
    margin-left: 45%;
    margin-top: 2em;
 }
@@ -129,16 +152,16 @@ footer p{
 /* Media query starts here */
 @media only screen and (max-width: 425px){
 
-    .first_article{
+    .first__article{
         width: 80%;
         margin-top: 9em;
     }
-    .first_article h2{
+    .first__article h2{
         font-size: 2em;
     }
 
     /* Humbuger menu starts here */
-    .nav_list{
+    .nav__list{
         display: none;
         margin-top: -1%;
     }
@@ -147,18 +170,18 @@ footer p{
         flex-direction: column;
         padding-top: 8em;
     }
-    .nav_list.show{
+    .nav__list.show{
         display: flex;
         flex-direction: column;
     }  
     
-    #burger_menu{
+    #burger__menu{
         display: inline-block;
         cursor: pointer;
         margin: 1em -19em 1em 0px;
     }
     
-    .top_bar, .middle_bar, .bottom_bar{
+    .top__bar, .middle_bar, .bottom__bar{
         width: 25px;
         height: 3px;
         background-color: #fff;
@@ -166,15 +189,15 @@ footer p{
         transition: 0.5s;
     }
     
-    .change .top_bar{
+    .change .top__bar{
         transform: rotateZ(-45deg) translateY(9px)
      } 
     
-     .change .middle_bar{
+     .change .middle__bar{
          opacity: 0;
      }
     
-     .change .bottom_bar{
+     .change .bottom__bar{
          transform: rotateZ(45deg) translateY(-10px);
       } 
 }
@@ -183,7 +206,7 @@ footer p{
             
         /* Humbuger menu starts here */
        
-    #burger_menu{
+    #burger__menu{
         margin: 1em -16em 1em 0px;
     }
     
@@ -193,7 +216,7 @@ footer p{
             
         /* Humbuger menu starts here */
 
-    #burger_menu{
+    #burger__menu{
         margin: 1em -13em 1em 0px;
     }           
 }
