@@ -41,7 +41,7 @@ a:hover{
 
 /* Header starts here */
 
-.nav_list{
+.nav__list{
     display: flex;
 }
 
@@ -58,10 +58,11 @@ a:hover{
     z-index: 10;
 }
 
-.nav_list li a{
+.nav__list li a{
  font-size: 20px;
  margin: 10px;
 }
+
 
 /* Section starts here */
 
@@ -122,9 +123,6 @@ a:hover{
     10% {
       opacity: 1;
     }
-    20% {
-      opacity: 1;
-    }
     30% {
       opacity: 0;
     }
@@ -134,13 +132,13 @@ a:hover{
   }
 
   /* Second article starts here */
-  .project_header{
+  .project__header{
     text-align: center;
     line-height: 1em;
     font-size: 4em;
 }
 
-.project_list{
+.project__list{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -155,7 +153,7 @@ a:hover{
     border: 2px solid gray;
 }
 
-.project_links a:first-child{
+.project__links a:first-child{
     background-color: maroon;
     color: white;
     padding: 5px 20px 5px 20px;
@@ -188,7 +186,7 @@ figcaption h3{
     color: #fff;
 }
 
-#project_links{
+#project__links{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -234,7 +232,7 @@ footer p{
 
 /*Humburger menu starts here*/
 
-    .nav_list{
+    .nav__list{
         display: none;
     }
 
@@ -243,18 +241,18 @@ footer p{
         padding-top: 8em;
     }
 
-    .nav_list.show{
+    .nav__list.show{
         display: flex;
         flex-direction: column;
     }  
 
-    #burger_menu{
+    #burger__menu{
         display: inline-block;
         cursor: pointer;
         margin: 1em -20em 1em 0px;
     }
 
-    .top_bar, .middle_bar, .bottom_bar{
+    .top__bar, .middle__bar, .bottom__bar{
         width: 25px;
         height: 3px;
         background-color: #fff;
@@ -262,15 +260,15 @@ footer p{
         transition: 0.5s;
     }
 
-    .change .top_bar{
+    .change .top__bar{
         transform: rotateZ(-45deg) translateY(9px)
     } 
 
-    .change .middle_bar{
+    .change .middle__bar{
         opacity: 0;
     }
 
-    .change .bottom_bar{
+    .change .bottom__bar{
         transform: rotateZ(45deg) translateY(-10px);
     } 
 }
@@ -281,13 +279,13 @@ footer p{
         margin-left: 20px;
     }
 
-    .project_links a:first-child{
+    .project__links a:first-child{
         margin-left: 23%;
     }
 
     /* Humburger menu starts here */
 
-    #burger_menu{
+    #burger__menu{
         margin: 1em -16em 1em 0px;
     }
 }
