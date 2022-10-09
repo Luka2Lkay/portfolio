@@ -39,6 +39,27 @@ a:hover{
     color:#fff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: maroon;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #000;
+}
+
 /* Header starts here */
 
 .nav__list{
@@ -80,12 +101,11 @@ a:hover{
     color: gold;
 }
 
-.title h3{
+.typing{
     font-size: 2em;
     color: #fff;
     background-color: #000;
     border-width: 20%;
-    border-color: red;
 }
 
 #slide{
@@ -237,6 +257,10 @@ footer p{
     .title h2{
         font-size: 2em;
         color: orangered;
+    }
+
+    .navigation {
+        background-color: transparent;
     }
 
 /*Humburger menu starts here*/
