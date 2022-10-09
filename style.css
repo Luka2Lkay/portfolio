@@ -108,6 +108,10 @@ html {
     border-width: 20%;
 }
 
+.title h3 {
+    color: #fff;
+}
+
 #slide{
     width: 100%;
     height: 25em;

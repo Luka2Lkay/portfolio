@@ -103,8 +103,15 @@ body{
 }
 
 .skills img, .tools img{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+    animation: images 4s 1 forwards;
+}
+
+@keyframes images {
+    100% {
+        transform: scale(1.5);
+    }
 }
 
 /* Second article ends here */
