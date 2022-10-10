@@ -63,7 +63,8 @@ html {
 /* Header starts here */
 
 .nav__list{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .navigation{
@@ -75,7 +76,7 @@ html {
     width: 100%;
     padding-right: 2em;
     position: fixed;
-    top: 0;
+    top: 0px;
     z-index: 10;
 }
 
