@@ -321,6 +321,10 @@ footer p{
         margin-left: 20px;
     }
 
+    .typing {
+        font-size: 18px;
+    }
+
     .project__links a:first-child{
         margin-left: 23%;
     }
