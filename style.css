@@ -71,18 +71,39 @@ html {
     display: grid;
     background-color: #000;
     justify-content: end;
-    height: 4em;
+    color: #fff;
     width: 100%;
-    padding-right: 2em;
-    position: fixed;
-    top: 0px;
-    z-index: 10;
 }
 
 .nav__list li a{
- font-size: 20px;
- margin: 10px;
+ font-size: 1.5rem;
+ /* margin: 10px; */
+ display: inline-block;
+ padding: 15px;
+ text-transform: uppercase;
 }
+
+.open__menu {
+    color: #fff;
+    font-size: 2rem;
+    margin: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.close__menu, .icons {
+    font-size: 2rem;
+    display: none;
+}
+
+.fa-facebook, .fa-linkedin, .fa-github {
+    color: #fff;
+}
+
+.fa-linkedin:hover {color: rgb(86,154,243)}
+.fa-github:hover {color: rgb(255,123,0)}
+
+
 
 /* Section starts here */
 
@@ -258,7 +279,7 @@ footer p{
 
 /* Media query starts here */
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 480px){
     .title h2{
         font-size: 2em;
         color: orangered;
@@ -268,56 +289,41 @@ footer p{
         font-size: 24px;
     }
 
+    .nav__list {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        transition: top 1s ease;;
+        background-color: #000;
+        display: none;
+    }
+
+    .close__menu {
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 20px;
+    }
+
+    .open__menu {
+        display: block;
+    }
+
+    .icons{
+        display: inline-block;
+        padding: 5rem;
+    }
+
     .projects:hover {
         margin-top: 1em;
         margin-bottom: 1.5em;
     }
-
-    .navigation {
-        background-color: transparent;
-    }
-
-/*Humburger menu starts here*/
-
-    .nav__list{
-        display: none;
-    }
-
-    .navigation{
-        padding-top: 8em;
-    }
-
-    .nav__list.show{
-        display: block;
-        margin-top: -5em;
-        border: 1px solid red;
-    }  
-
-    #burger__menu{
-        display: inline-block;
-        cursor: pointer;
-        margin: 1em -20em 1em 0px;
-    }
-
-    .top__bar, .middle__bar, .bottom__bar{
-        width: 25px;
-        height: 3px;
-        background-color: #fff;
-        margin: 4px 0;
-        transition: 0.5s;
-    }
-
-    .change .top__bar{
-        transform: rotateZ(-45deg) translateY(9px)
-    } 
-
-    .change .middle__bar{
-        opacity: 0;
-    }
-
-    .change .bottom__bar{
-        transform: rotateZ(45deg) translateY(-10px);
-    } 
 }
 
 @media only screen and (max-width: 320px){
@@ -337,12 +343,6 @@ footer p{
 
     .project__links a:first-child{
         margin-left: 23%;
-    }
-
-    /* Humburger menu starts here */
-
-    #burger__menu{
-        margin: 1em -16em 1em 0px;
     }
 }
 
