@@ -185,9 +185,13 @@ html {
 }
 
 .project__list{
-    display: flex;
+    display: grid;
+    grid-auto-rows: auto;
+    width: 100%;
+    /* grid-gap: 50px; */
+    /* margin-left: 50%;  */
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .projects{
@@ -259,12 +263,16 @@ figcaption h3{
 /* Footer starts here */
 
 footer{
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-left: 180px;
     background-color: black;
-    align-items: center;   
-    height: 4em;
+    align-items: center;
 }
 
 footer a, footer p{
@@ -281,7 +289,7 @@ footer p{
 
 /* Media query starts here */
 
-@media only screen and (max-width: 1440px){
+@media only screen and (max-width: 1200px){
     .title{
         position: relative;
         top: 10em;
@@ -299,6 +307,31 @@ footer p{
         margin-bottom: 1.5em;
     }
 
+    .project__list{
+        /* display: grid; */
+        /* grid-auto-rows: auto; */
+        /* grid-gap: 50px;
+        width: 50px;
+        margin-right: 65%; 
+        grid-template-columns: 1fr; */
+        /* justify-content: space-around; */
+    }
+
+    footer {
+        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+        grid-gap: 100px;
+        padding-left: 10px;
+    }
+
+    }
+
+    @media only screen and (max-width: 1024px){
+        .project__list {
+            grid-gap: 50px;
+            width: 50px;
+            margin-right: 65%; 
+            grid-template-columns: 1fr;
+        }
     }
 
 @media only screen and (max-width: 700px){
@@ -308,11 +341,22 @@ footer p{
         margin-right: 0;
     }
 
+    .project__list{
+        width: 100%;
+        margin-right: 0px; 
+        margin-left: 10px;
+    }
+
     .title{
         position: absolute;
         left: 10%;
         top: 30%;
         z-index: 2;
+    }
+
+    .project__list{
+        grid-template-columns: 1fr;
+        /* margin-left: 40px; */
     }
 
     .title h2 {
@@ -358,6 +402,10 @@ footer p{
         margin-top: 1em;
         margin-bottom: 1.5em;
     }
+
+footer p{
+    font-size: 14px;
+}
 }
 
 @media only screen and (max-width: 320px){
@@ -379,6 +427,25 @@ footer p{
         margin-left: 23%;
     }
 }
+
+@media only screen and (max-width: 300px){
+    .projects{
+        width: 200px;
+    }
+
+    footer {
+        padding-left: 2px;
+    }
+
+    .project__list {
+        margin-left: 0;
+    }
+
+    footer a {
+        font-size: 20px;
+    }
+}
+
 
 
 
