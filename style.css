@@ -64,14 +64,13 @@ html {
 
 .nav__list{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .navigation{
-    display: flex;
+    display: grid;
     background-color: #000;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: end;
     height: 4em;
     width: 100%;
     padding-right: 2em;
@@ -172,7 +171,7 @@ html {
     margin: 0px 0px 10px 0px;
     background-color: #000;
     border-radius: 4px;
-    padding: 5px 0px 5px 5px;
+    padding: 5px 0px 15px 5px;
     width: 320px;
     box-shadow:  0px 6px 10px 0px maroon;
 }
@@ -202,7 +201,7 @@ figcaption h2{
 
 .description{
     text-align: justify;
-    margin: 15px 10px 0 10px;
+    margin: 15px 10px 10px 10px;
     color: #fff;
 }
 
@@ -218,6 +217,7 @@ figcaption h3{
     font-size: 20px;
     line-height: 2em;
     color: #fff;
+    margin-bottom: 15px;
 }
 
 #project__links{
@@ -264,6 +264,10 @@ footer p{
         color: orangered;
     }
 
+    .typing {
+        font-size: 24px;
+    }
+
     .navigation {
         background-color: transparent;
     }
@@ -275,13 +279,13 @@ footer p{
     }
 
     .navigation{
-        flex-direction: column;
         padding-top: 8em;
     }
 
     .nav__list.show{
-        display: flex;
-        flex-direction: column;
+        display: block;
+        margin-top: -5em;
+        border: 1px solid red;
     }  
 
     #burger__menu{
