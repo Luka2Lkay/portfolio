@@ -1,42 +1,42 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 80%;
     margin: 0 auto;
 }
 
-body{
+body {
     font-family: 'Roboto slab', 'Times New Roman', Times, serif;
 }
 
-hr{
-    width:50%;
+hr {
+    width: 50%;
     margin: 0px auto 2em auto;
 }
 
-.active{
+.active {
     color: #fff;
 }
 
-h2{
+h2 {
     line-height: 2em;
 }
 
-a{
+a {
     text-decoration: none;
     color: gold;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
-a:hover{
-    color:#fff;
+a:hover {
+    color: #fff;
 }
 
 html {
@@ -62,12 +62,12 @@ html {
 
 /* Header starts here */
 
-.nav__list{
+.nav__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.navigation{
+.navigation {
     display: grid;
     background-color: #000;
     justify-content: end;
@@ -78,11 +78,11 @@ html {
     z-index: 10;
 }
 
-.nav__list li a{
- font-size: 1.5rem;
- display: inline-block;
- padding: 15px;
- text-transform: uppercase;
+.nav__list li a {
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 15px;
+    text-transform: uppercase;
 }
 
 .open__menu {
@@ -93,17 +93,25 @@ html {
     display: none;
 }
 
-.close__menu, .icons {
+.close__menu,
+.icons {
     font-size: 2rem;
     display: none;
 }
 
-.fa-facebook, .fa-linkedin, .fa-github {
+.fa-facebook,
+.fa-linkedin,
+.fa-github {
     color: #fff;
 }
 
-.fa-linkedin:hover {color: rgb(86,154,243)}
-.fa-github:hover {color: rgb(255,123,0)}
+.fa-linkedin:hover {
+    color: rgb(86, 154, 243)
+}
+
+.fa-github:hover {
+    color: rgb(255, 123, 0)
+}
 
 
 
@@ -111,20 +119,20 @@ html {
 
 /* First article starts here */
 
-.title{
+.title {
     position: absolute;
     left: 10%;
-    top: 30%;
+    top: 25%;
     text-align: center;
     z-index: 1;
 }
 
-.title h2{
+.title h2 {
     font-size: 4em;
     color: gold;
 }
 
-.typing{
+.typing {
     font-size: 2em;
     color: #fff;
     background-color: #000;
@@ -135,17 +143,17 @@ html {
     color: #fff;
 }
 
-#slide{
+#slide {
     width: 100%;
     height: 25em;
     overflow: hidden;
     position: relative;
-    background-image: url("images/red-mouse-computer.jpg");  
+    background-image: url("images/red-mouse-computer.jpg");
     background-size: cover;
     margin-bottom: 10px;
 }
 
-#slide > div {
+#slide>div {
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -153,54 +161,56 @@ html {
     position: absolute;
     animation: slide 25s infinite;
     opacity: 0;
-  }
+}
 
-  #slide > div:nth-child(2) {
+#slide>div:nth-child(2) {
     animation-delay: 5s;
-  }
-  #slide > div:nth-child(3) {
-    animation-delay: 10s;
-  }
-  #slide > div:nth-child(4) {
-    animation-delay: 15s;
-  }
-  
-  @keyframes slide {
-    10% {
-      opacity: 1;
-    }
-    30% {
-      opacity: 0;
-    }
-    40% {
-      transform: scale(1.2);
-    }
-  }
+}
 
-  /* Second article starts here */
-  .project__header{
+#slide>div:nth-child(3) {
+    animation-delay: 10s;
+}
+
+#slide>div:nth-child(4) {
+    animation-delay: 15s;
+}
+
+@keyframes slide {
+    10% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    40% {
+        transform: scale(1.2);
+    }
+}
+
+/* Second article starts here */
+.project__header {
     text-align: center;
     line-height: 1em;
     font-size: 4em;
 }
 
-.project__list{
+.project__list {
     display: grid;
     grid-auto-rows: auto;
     width: 100%;
-    /* grid-gap: 50px; */
-    /* margin-left: 50%;  */
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-around;
 }
 
-.projects{
+.projects {
     margin: 0px 0px 10px 0px;
     background-color: #000;
     border-radius: 4px;
     padding: 5px 0px 15px 5px;
     width: 320px;
-    box-shadow:  0px 6px 10px 0px maroon;
+    box-shadow: 0px 6px 10px 0px maroon;
 }
 
 .projects:hover {
@@ -213,7 +223,7 @@ html {
     }
 }
 
-.project__links a:first-child{
+.project__links a:first-child {
     background-color: maroon;
     color: white;
     padding: 5px 20px 5px 20px;
@@ -221,24 +231,24 @@ html {
     margin-left: 30%;
 }
 
-figcaption h2{
+figcaption h2 {
     text-align: center;
     color: gold;
 }
 
-.description{
+.description {
     text-align: justify;
     margin: 15px 10px 10px 10px;
     color: #fff;
 }
 
-figcaption h3{
+figcaption h3 {
     text-align: center;
     line-height: 2em;
     color: gold;
 }
 
-.skills{
+.skills {
     font-family: "New Tegomin", Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 20px;
@@ -247,13 +257,7 @@ figcaption h3{
     margin-bottom: 15px;
 }
 
-#project__links{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.disclaimer{
+.disclaimer {
     color: blue !important;
     font-size: 16px !important;
     text-align: center;
@@ -262,7 +266,7 @@ figcaption h3{
 
 /* Footer starts here */
 
-footer{
+footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: center;
@@ -275,22 +279,23 @@ footer{
     align-items: center;
 }
 
-footer a, footer p{
+footer a,
+footer p {
     color: #fff;
 }
 
-footer a{
+footer a {
     font-size: 36px;
 }
 
-footer p{
+footer p {
     font-size: 18px;
 }
 
 /* Media query starts here */
 
-@media only screen and (max-width: 1200px){
-    .title{
+@media only screen and (max-width: 1200px) {
+    .title {
         position: relative;
         top: 10em;
         margin-right: 100em;
@@ -307,56 +312,42 @@ footer p{
         margin-bottom: 1.5em;
     }
 
-    .project__list{
-        /* display: grid; */
-        /* grid-auto-rows: auto; */
-        /* grid-gap: 50px;
-        width: 50px;
-        margin-right: 65%; 
-        grid-template-columns: 1fr; */
-        /* justify-content: space-around; */
-    }
-
     footer {
         grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
         grid-gap: 100px;
         padding-left: 10px;
     }
 
-    }
+}
 
-    @media only screen and (max-width: 1024px){
-        .project__list {
-            grid-gap: 50px;
-            width: 50px;
-            margin-right: 65%; 
-            grid-template-columns: 1fr;
-        }
+@media only screen and (max-width: 1024px) {
+    .project__list {
+        grid-gap: 50px;
+        width: 50px;
+        margin-left: 50%;
+        grid-template-columns: 1fr;
     }
+}
 
-@media only screen and (max-width: 700px){
-    #slide{
+@media only screen and (max-width: 700px) {
+    #slide {
         padding-bottom: 100px;
         margin-top: 0;
         margin-right: 0;
     }
 
-    .project__list{
+    .project__list {
         width: 100%;
-        margin-right: 0px; 
+        margin-right: 3px;
         margin-left: 10px;
+        grid-template-columns: 1fr;
     }
 
-    .title{
+    .title {
         position: absolute;
         left: 10%;
         top: 30%;
         z-index: 2;
-    }
-
-    .project__list{
-        grid-template-columns: 1fr;
-        /* margin-left: 40px; */
     }
 
     .title h2 {
@@ -377,7 +368,7 @@ footer p{
         grid-template-columns: 1fr;
         justify-items: center;
         align-items: center;
-        transition: top 1s ease;;
+        transition: top 1s ease;
         background-color: #000;
         display: none;
     }
@@ -393,7 +384,7 @@ footer p{
         display: block;
     }
 
-    .icons{
+    .icons {
         display: inline-block;
         padding: 5rem;
     }
@@ -403,13 +394,30 @@ footer p{
         margin-bottom: 1.5em;
     }
 
-footer p{
-    font-size: 14px;
-}
+    footer p {
+        font-size: 14px;
+    }
 }
 
-@media only screen and (max-width: 320px){
-    .projects{
+@media only screen and (max-width: 550px) {
+    .project__list {
+        grid-gap: 50px;
+        width: 50px;
+        margin-left: 50%;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    .project__list {
+        margin-left: 40%;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    .projects {
         width: 280px;
         margin-left: 20px;
     }
@@ -423,13 +431,13 @@ footer p{
         margin-bottom: 2em;
     }
 
-    .project__links a:first-child{
+    .project__links a:first-child {
         margin-left: 23%;
     }
 }
 
-@media only screen and (max-width: 300px){
-    .projects{
+@media only screen and (max-width: 300px) {
+    .projects {
         width: 200px;
     }
 
@@ -438,15 +446,12 @@ footer p{
     }
 
     .project__list {
-        margin-left: 0;
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 10px;
     }
 
     footer a {
         font-size: 20px;
     }
 }
-
-
-
-
-
