@@ -269,6 +269,10 @@ footer p {
         grid-template-columns: 1fr;
     }
 
+    .skills img:nth-child(3){
+        margin-left: 0;
+    }
+
     .close__menu {
         display: block;
         position: absolute;
@@ -299,7 +303,6 @@ footer p {
 
     .skills {
         display: grid;
-        /* grid-template-columns: repeat(3, 1fr); */
         margin-left: 5em;
         padding-left: 0;
     }
