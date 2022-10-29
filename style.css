@@ -61,7 +61,6 @@ html {
 }
 
 /* Header starts here */
-
 .nav__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -113,12 +112,9 @@ html {
     color: rgb(255, 123, 0)
 }
 
-
-
 /* Section starts here */
 
 /* First article starts here */
-
 .title {
     position: absolute;
     left: 10%;
@@ -265,7 +261,6 @@ figcaption h3 {
 }
 
 /* Footer starts here */
-
 footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -293,9 +288,7 @@ footer p {
     margin-right: 30em;
 }
 
-
 /* Media query starts here */
-
 @media only screen and (max-width: 1200px) {
     .title {
         position: relative;
