@@ -113,8 +113,6 @@ html {
 }
 
 /* Section starts here */
-
-/* First article starts here */
 .title {
     position: absolute;
     left: 10%;
@@ -185,7 +183,6 @@ html {
     }
 }
 
-/* Second article starts here */
 .project__header {
     text-align: center;
     line-height: 1em;
@@ -446,14 +443,14 @@ footer p {
         width: 200px;
     }
 
-    footer {
-        padding-left: 2px;
-    }
-
     .project__list {
         width: 100%;
         margin-right: 0px;
         margin-left: 10px;
+    }
+
+    footer {
+        padding-left: 2px;
     }
 
     footer a {
