@@ -13,10 +13,3 @@ const close = () => {
 
 openMenu.addEventListener('click', show);
 closeMenu.addEventListener('click', close);
-
-const typed = new Typed (".typing", {
-strings: ['Lukhanyo Matshebelele'],
-typeSpeed: 100,
-backSpeed: 60,
-loop: true
-});

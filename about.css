@@ -191,7 +191,6 @@ body {
 }
 
 /* Footer starts here */
-
 footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -219,6 +218,69 @@ footer p {
     margin-right: 30em;
 }
 /* Media query starts here */
+
+@media only screen and (max-width: 1200px) {
+    footer {
+        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+        grid-gap: 100px;
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    footer {
+        padding-left: 14em;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .nav__list {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 100;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        transition: top 1s ease;
+        background-color: #000;
+        display: none;
+    }
+
+    .close__menu {
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 20px;
+    }
+
+    .open__menu {
+        display: block;
+    }
+
+    .icons {
+        display: inline-block;
+        padding: 5rem;
+    }
+
+    footer {
+        padding-left: 10px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 550px){
+    footer {
+        padding-left: 5em;
+    }
+}
+
 @media only screen and (max-width: 425px) {
 
     .first__article {
@@ -244,91 +306,17 @@ footer p {
         margin-bottom: 10px;
     }
 
-    /*Humburger menu starts here*/
-
-    .nav__list {
-        display: none;
-        margin-top: -1%;
-    }
-
-    .navigation {
-        flex-direction: column;
-        padding-top: 8em;
-    }
-
-    .nav__list.show {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #burger__menu {
-        display: inline-block;
-        cursor: pointer;
-        margin: 0 -19em 1em 0;
-    }
-
-    .top__bar,
-    .middle__bar,
-    .bottom__bar {
-        width: 25px;
-        height: 3px;
-        background-color: #fff;
-        margin: 4px 0;
-        transition: 0.5s;
-    }
-
-    .change .top__bar {
-        transform: rotateZ(-45deg) translateY(9px)
-    }
-
-    .change .middle__bar {
-        opacity: 0;
-    }
-
-    .change .bottom__bar {
-        transform: rotateZ(45deg) translateY(-10px);
-    }
-
-    .skills {
-        flex-direction: column;
-    }
-
-    .tools {
-        flex-direction: column;
+    footer {
+        padding-left: 10px;
     }
 }
 
-@media only screen and (max-width: 375px) {
-
-    .first__article {
-        height: 43em;
+@media only screen and (max-width: 300px) {
+    footer {
+        padding-left: 2px;
     }
 
-    /* Humbuger menu starts here */
-
-    #burger__menu {
-        margin: 1em -16em 1em 0px;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-
-    .first__article h1 {
-        font-size: 2em;
-    }
-
-    .first__article {
-        height: 47em;
-    }
-
-    .skills,
-    .tools {
-        width: 60%;
-    }
-
-    /* Humbuger menu starts here */
-
-    #burger__menu {
-        margin: 1em -13em 1em 0px;
+    footer a {
+        font-size: 20px;
     }
 }
