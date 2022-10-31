@@ -150,7 +150,7 @@ body {
     box-shadow: 0 0 20px 0 #999;
     margin-left: 50%;
     margin-top: 5em;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     padding: 5px;
     position: relative;
     top: 12em;
@@ -178,8 +178,8 @@ form {
 }
 
 .textarea__field {
- height: 150px;
- padding-top: 10px;   
+    height: 150px;
+    padding-top: 10px;
 }
 
 .btn {
@@ -187,7 +187,7 @@ form {
     color: #fff;
     margin-top: 18px;
     padding: 10px;
-    background-color:  rgb(255, 123, 0);
+    background-color: rgb(255, 123, 0);
     font-weight: 700;
     font-size: 12px;
     border: none;
@@ -294,6 +294,18 @@ footer p {
 }
 
 @media only screen and (max-width: 550px) {
+    .first__article h2 {
+        font-size: 2em;
+    }
+
+    .first__article {
+        width: 60%;
+    }
+
+    .contact__form {
+        width: 50%;
+    }
+
     footer a:first-child {
         padding-left: 30px;
     }
@@ -329,6 +341,10 @@ footer p {
     footer a:nth-child(3) {
         padding-left: 10px;
     }
+
+    .contact__form {
+        width: 60%;
+    }
 }
 
 @media only screen and (max-width: 300px) {
@@ -342,6 +358,10 @@ footer p {
 
     .first__article h2 {
         font-size: 1em;
+    }
+
+    .contact__form {
+        width: 70%;
     }
 
     footer a {
