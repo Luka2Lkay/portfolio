@@ -135,6 +135,7 @@ body {
     font-size: 18px;
     padding: 0px 20px 0px 20px;
 }
+
 /* first article ends here */
 
 /* Second article starts here */
@@ -162,6 +163,7 @@ body {
         transform: scale(1.5);
     }
 }
+
 /* Second article ends here */
 
 /* Third article starts here */
@@ -193,7 +195,7 @@ footer {
     grid-gap: 10px;
     margin: 0 auto;
     max-width: 100%;
-    padding-left: 280px;
+    padding-left: 310px;
     background-color: black;
     align-items: center;
 }
@@ -222,7 +224,7 @@ footer p {
 }
 
 @media only screen and (max-width: 1024px) {
-.first__article {
+    .first__article {
         height: 25em;
     }
 
@@ -231,11 +233,17 @@ footer p {
     }
 
     footer {
-        padding-left: 14em;
+        padding-left: 180px;
     }
 
     .skills {
         padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    footer {
+        padding-left: 140px;
     }
 }
 
@@ -304,8 +312,12 @@ footer p {
         margin-top: 7em;
     }
 
+    footer a:first-child {
+        padding-left: 30px;
+    }
+
     footer {
-        padding-left: 5em;
+        padding-left: 20px;
     }
 }
 
@@ -335,6 +347,20 @@ footer p {
     }
 
     footer {
+        padding-left: 5px;
+    }
+
+    footer a:first-child {
+        padding-left: 10px;
+    }
+
+    footer a:nth-child(3) {
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    footer a:nth-child(3) {
         padding-left: 10px;
     }
 }
@@ -358,11 +384,15 @@ footer p {
         grid-template-columns: 1fr;
     }
 
-    footer {
-        padding-left: 2px;
-    }
-
     footer a {
         font-size: 20px;
+    }
+
+    footer a:nth-child(3) {
+        padding-left: 5px;
+    }
+
+    footer a:first-child {
+        padding-left: 0px;
     }
 }
