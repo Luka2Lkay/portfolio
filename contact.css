@@ -116,12 +116,10 @@ body {
 
 /* First article starts here */
 .first__article {
-    margin-top: 5em;
-    height: 25em;
+    height: 18em;
     background-color: #000;
     padding: 0px 10px 0px 10px;
     margin-top: 5em;
-    margin-bottom: 3em;
     width: 50%;
 }
 
@@ -140,16 +138,60 @@ body {
     margin-top: 2em;
 }
 
-.first__article img {
+.first__article a {
     margin-left: 45%;
     margin-top: 2em;
+    font-size: 1.5em;
 }
 
-.disclaimer {
-    color: blue !important;
-    font-size: 16px !important;
+.contact__form {
+    width: 500px;
+    background-color: #000;
+    box-shadow: 0 0 20px 0 #999;
+    margin-left: 50%;
+    margin-top: 5em;
+    transform: translate(-50%,-50%);
+    padding: 5px;
+    position: relative;
+    top: 12em;
+
+}
+
+.contact__form h2 {
+    color: gold;
     text-align: center;
-    margin-bottom: 1em;
+}
+
+form {
+    margin: 5px 35px 35px 35px;
+}
+
+.input__field {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid gold;
+    border-radius: 14px;
+    outline: none;
+}
+
+.textarea__field {
+ height: 150px;
+ padding-top: 10px;   
+}
+
+.btn {
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 18px;
+    padding: 10px;
+    background-color:  rgb(255, 123, 0);
+    font-weight: 700;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
 }
 
 /* Footer starts here */
@@ -287,7 +329,7 @@ footer p {
     footer a:nth-child(3) {
         padding-left: 10px;
     }
-    }
+}
 
 @media only screen and (max-width: 300px) {
     .first__article p {
@@ -301,11 +343,6 @@ footer p {
     .first__article h2 {
         font-size: 1em;
     }
-
-    /* footer {
-        padding-left: 5px;
-
-    } */
 
     footer a {
         font-size: 20px;
