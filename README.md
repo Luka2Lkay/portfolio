@@ -1,3 +1,3 @@
-This is my portfolio of Umuzi projects
+This is my portfolio of work
 
 LINK: https://luka2lkay.github.io/portfolio/

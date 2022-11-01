@@ -216,14 +216,23 @@ html {
     }
 }
 
-.project__links a:first-child {
-    background-color: maroon;
+.project__links {
+    display: grid;
     color: white;
-    padding: 5px 20px 5px 20px;
     font-size: 18px;
-    margin-left: 30%;
+    margin-left: 20%;
 }
 
+.project__links a:first-child {
+    margin-bottom: 10px;
+}
+
+.project__links a:first-child, .project__links a:nth-child(2) {
+    width: 10em;
+    padding: 5px 2px 5px 2px;
+    background-color: maroon;
+    text-align: center;
+}
 figcaption h2 {
     text-align: center;
     color: gold;
