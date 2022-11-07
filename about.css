@@ -136,6 +136,14 @@ body {
     padding: 0px 20px 0px 20px;
 }
 
+.cv__button {
+   position: absolute;
+   top: 18em;
+   left: 45%;
+   font-weight: 700;
+   font-size: 1.2em;
+   color: lime;
+}
 /* first article ends here */
 
 /* Second article starts here */
@@ -228,6 +236,10 @@ footer p {
         height: 25em;
     }
 
+    .cv__button {
+        top: 20em;
+     }
+
     .skills img:nth-child(3) {
         margin-left: 18px;
     }
@@ -245,6 +257,12 @@ footer p {
     footer {
         padding-left: 140px;
     }
+}
+
+@media only screen and (max-width: 820px) {
+    .cv__button {
+        top: 22em;
+     }
 }
 
 @media only screen and (max-width: 700px) {
@@ -312,6 +330,11 @@ footer p {
         margin-top: 7em;
     }
 
+    .cv__button {
+        top: 29em;
+        left: 38%;
+     }
+
     footer a:first-child {
         padding-left: 30px;
     }
@@ -327,6 +350,12 @@ footer p {
         height: 45em;
         margin-top: 9em;
     }
+
+    .cv__button {
+        top: 37em;
+        left: 35%;
+     }
+
 
     .skills {
         margin: 0 auto;
@@ -359,6 +388,12 @@ footer p {
     }
 }
 
+@media only screen and (max-width: 393px) {
+    .cv__button {
+        top: 42em;
+     }
+}
+
 @media only screen and (max-width: 375px) {
     footer a:nth-child(3) {
         padding-left: 10px;
@@ -377,6 +412,10 @@ footer p {
     .first__article h1 {
         font-size: 1.5em;
     }
+
+    .cv__button {
+        left: 30%;
+     }
 
     .skills {
         width: 50px;
