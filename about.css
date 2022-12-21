@@ -25,7 +25,6 @@ html {
     background: gold;
 }
 
-
 .container {
     width: 80%;
     margin: 0 auto;
@@ -155,7 +154,9 @@ body {
 
 .skills {
     display: grid;
+    margin-top: 10px;
     grid-template-columns: repeat(3, 1fr);
+    row-gap: 1.5em;
     padding-left: 6em;
 }
 
@@ -169,6 +170,7 @@ body {
 @keyframes images {
     100% {
         transform: scale(1.5);
+        margin-top: 1.5em;
     }
 }
 
